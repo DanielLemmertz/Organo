@@ -1,0 +1,45 @@
+.button {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    border: 2px solid var(--color-purple, #a412ed);
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition:
+        background-color 1s ease-in-out,
+        box-shadow 1s ease-in-out;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent 0%,
+            #a412ed 100%,
+            transparent 100%);
+    transition: left 1s cubic-bezier(.4, 0, .2, 1);
+}
+
+.button:hover::before {
+    left: 100%;
+}
+
+.button:hover {
+
+    background-color: var(--color-purple, #a412ed);
+    box-shadow:
+        0 0 6px var(--color-purple, #a412ed),
+        0 0 12px var(--color-purple, #a412ed),
+        0 0 18px var(--color-purple, #a412ed);
+}

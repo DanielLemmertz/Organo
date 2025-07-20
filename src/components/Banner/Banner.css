@@ -1,0 +1,30 @@
+.banner {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    text-align: center;
+    border-radius: 20px;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.banner img {
+    max-width: 10%;
+}
+
+.banner:hover {
+
+    animation: neon-glow-banner 1.2s infinite alternate;
+
+}
+
+@keyframes neon-glow-banner {
+    from {
+        box-shadow: 0 0 8px var(--color-purple, #a412ed);
+    }
+
+    to {
+        box-shadow:
+            0 0 8px var(--color-purple, #a412ed),
+            0 0 16px var(--color-purple, #a412ed),
+            0 0 24px var(--color-purple, #a412ed);
+    }
+}

@@ -1,0 +1,34 @@
+.Card {
+    width: 275px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.738);
+}
+
+.Card .Cabecalho {
+    border-radius: 10px 10px 0 0;
+}
+
+.Card img {
+    width: 60%;
+    border-radius: 50%;
+    position: relative;
+    bottom: -40px;
+}
+
+.Card .Rodape {
+    background-color: #43434A;
+    border-radius: 0 0 10px 10px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.Card .Rodape h4 {
+    color: white;
+    font-size: 20px;
+    line-height: 22px;
+}

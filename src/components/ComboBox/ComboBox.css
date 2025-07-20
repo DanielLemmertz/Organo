@@ -1,0 +1,42 @@
+.combobox {
+    margin: 24px 0;
+}
+
+.combobox label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+
+/* container do select  ── garante posicionamento do pseudo-elemento */
+.combobox {
+    position: relative;
+    display: block;
+    /* ou inline-block, o que preferir */
+}
+
+.combobox select {
+    background-color: #43434A;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    color: #fff;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    padding: 24px;
+
+    box-sizing: border-box;
+    transition: box-shadow 0.5s ease-in-out;
+    appearance: none;
+    /* -webkit-appearance: #43434A; */
+    /* -moz-appearance: #43434A; */
+}
+
+.combobox select:hover {
+    box-shadow:
+        10px 10px 30px rgba(0, 0, 0, 0.06),
+        0 0 8px rgba(255, 255, 255, 1);
+}

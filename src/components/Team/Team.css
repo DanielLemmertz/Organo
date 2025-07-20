@@ -1,0 +1,49 @@
+.team {
+    --glow-color: #fff;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.08);
+    font-family: 'Roboto';
+    padding: 32px;
+    border-radius: 20px;
+    margin: 30px;
+    transition: transform 0.3s ease;
+}
+
+.team h3 {
+    font-size: 32px;
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.team .collaborators {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.team:hover {
+    transform: scale(1.01);
+    animation: neon-glow-team 1.2s infinite alternate;
+}
+
+.team:hover h3 {
+    border-color: var(--glow-color);
+}
+
+@keyframes neon-glow-team {
+    from {
+        box-shadow:
+            0 0 8px var(--glow-color);
+    }
+
+    to {
+        box-shadow:
+            0 0 12px var(--glow-color),
+            0 0 24px var(--glow-color),
+            0 0 48px var(--glow-color);
+    }
+}
